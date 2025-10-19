@@ -75,3 +75,16 @@ interface TrendingCardProps {
   movie: TrendingMovie;
   index: number;
 }
+
+interface SessionUser {
+  id: string;
+  displayName: string;
+  email: string;
+}
+
+interface SessionStore {
+  user: SessionUser | null;
+  token: string | null;
+  signIn: (email: string, password: string) => Promise<void>;
+  signOut: () => void;
+}
