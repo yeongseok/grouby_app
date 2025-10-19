@@ -1,9 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { Stack } from "expo-router";
+import { type ReactElement } from "react";
 
-const _layout = () => {
-  return;
+export default function TabsLayout(): ReactElement {
+  return <Stack screenOptions={{ headerShown: false }} />;
 }
-
-export default _layout
-
-const styles = StyleSheet.create({})
